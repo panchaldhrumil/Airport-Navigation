@@ -1,5 +1,5 @@
 from langsmith import traceable
-from database.qdrant.vectorStore import create_vector_store
+from chatbot.database.qdrant.vectorStore import create_vector_store
 
 
 @traceable(name="Retrieve Airport Data")

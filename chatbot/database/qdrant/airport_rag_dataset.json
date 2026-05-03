@@ -1,0 +1,1411 @@
+﻿[
+    {
+        "text": "McDonald\u0027s (Terminal 1, Floor 2, Location: Departure Area): Serves breakfast, lunch, and dinner. Average prep time: 5-8 minutes for hot items, 2-3 minutes for pre-packed meals. Price range: Low ($5-10). Open 06:00-23:00. Best time to visit: 10:00-11:30am (low crowd, fresh inventory). Payment: Card, Cash, Mobile.",
+        "metadata": {
+            "type": "restaurant",
+            "name": "McDonald's",
+            "terminal": "T1",
+            "location": "T1_F2_Departure_Area",
+            "time_required": 8,
+            "category": "fast_food",
+            "price_range": "low",
+            "priority": "quick",
+            "queue_time": 8,
+            "traveler_type": [
+                "solo",
+                "family"
+            ],
+            "budget_preference": "low",
+            "accessibility": true,
+            "wheelchair_friendly": true,
+            "seating_capacity": 35,
+            "cuisine": "American Fast Food",
+            "rating": 3.4
+        },
+        "image_path": "/images/McDonalds.jpg"
+    },
+    {
+        "text": "Starbucks (Terminal 1, Floor 2, Near Gate A1): Premium coffee and pastries. Prep time: 4-6 minutes for specialty drinks. Price range: Medium ($3.50-8). Open 05:30-23:30. Loyalty program: 10% discount on all items with member card. Seating: 40 seats with WiFi availability.",
+        "metadata": {
+            "type": "restaurant",
+            "name": "Starbucks",
+            "terminal": "T1",
+            "location": "T1_F2_Near_Gate_A1",
+            "time_required": 6,
+            "category": "cafe",
+            "price_range": "medium",
+            "priority": "normal",
+            "queue_time": 6,
+            "traveler_type": [
+                "solo",
+                "business"
+            ],
+            "budget_preference": "medium",
+            "accessibility": true,
+            "wheelchair_friendly": true,
+            "seating_capacity": 40,
+            "loyalty_program": true,
+            "discount": "10%",
+            "rating": 4.2
+        },
+        "image_path": "/images/Starbucks.jpg"
+    },
+    {
+        "text": "Burger King (Terminal 1, Floor 2, Mid-Corridor): Burgers, sandwiches, hot meals. Prep time: 6-10 minutes. Price range: Low ($6-12). Open 06:00-23:00. Combo meal deal: -20% if you buy 2 items. Family-friendly with kids meal options. Takeaway recommended for speed.",
+        "metadata": {
+            "type": "restaurant",
+            "name": "Burger King",
+            "terminal": "T1",
+            "location": "T1_F2_Mid_Corridor",
+            "time_required": 10,
+            "category": "fast_food",
+            "price_range": "low",
+            "priority": "normal",
+            "queue_time": 5,
+            "traveler_type": [
+                "family"
+            ],
+            "budget_preference": "low",
+            "accessibility": true,
+            "wheelchair_friendly": true,
+            "seating_capacity": 45,
+            "special_offer": "-20% Combo Deal",
+            "rating": 3.4
+        },
+        "image_path": "/images/Burger King.jpg"
+    },
+    {
+        "text": "KFC (Terminal 1, Floor 2, West Wing): Fried chicken, hot meals, combo boxes. Prep time: 7-12 minutes (peak), 4-5 minutes (off-peak). Price range: Low-Medium ($8-15). Open 06:00-23:00. Best for: Families, long layovers. Seating: 50+ with dedicated family section.",
+        "metadata": {
+            "type": "restaurant",
+            "name": "KFC",
+            "terminal": "T1",
+            "location": "T1_F2_West_Wing",
+            "time_required": 10,
+            "category": "fast_food",
+            "price_range": "low",
+            "priority": "normal",
+            "queue_time": 7,
+            "traveler_type": [
+                "family"
+            ],
+            "budget_preference": "low",
+            "accessibility": true,
+            "wheelchair_friendly": true,
+            "seating_capacity": 50,
+            "family_section": true,
+            "rating": 3.9
+        },
+        "image_path": "/images/KFC.jpg"
+    },
+    {
+        "text": "Costa Coffee (Terminal 1, Floor 2, East Corridor): Premium coffee chain with pastries and light meals. Prep time: 3-5 minutes for hot drinks. Price range: Medium ($4-7). Open 05:30-23:30. Discount: -15% for loyalty members. Best for: Quick energy boost, quiet seating area.",
+        "metadata": {
+            "type": "restaurant",
+            "name": "Costa Coffee",
+            "terminal": "T1",
+            "location": "T1_F2_East_Corridor",
+            "time_required": 5,
+            "category": "cafe",
+            "price_range": "medium",
+            "priority": "quick",
+            "queue_time": 2,
+            "traveler_type": [
+                "solo",
+                "business"
+            ],
+            "budget_preference": "medium",
+            "accessibility": true,
+            "wheelchair_friendly": true,
+            "seating_capacity": 30,
+            "loyalty_discount": "15%",
+            "rating": 3.5
+        },
+        "image_path": "/images/Costa Coffee.jpg"
+    },
+    {
+        "text": "Pizza Hut (Terminal 1, Floor 2): Fresh pizza, pasta, Italian cuisine. Prep time: 12-15 minutes for made-to-order pizza. Price range: Medium ($10-20). Open 06:00-23:00. Family combo deal: -25% off 2+ pizzas. Not ideal if time is tight (prefer \u003c20 min to boarding).",
+        "metadata": {
+            "type": "restaurant",
+            "name": "Pizza Hut",
+            "terminal": "T1",
+            "location": "T1_F2_Central_Plaza",
+            "time_required": 15,
+            "category": "casual_dining",
+            "price_range": "medium",
+            "priority": "normal",
+            "queue_time": 5,
+            "traveler_type": [
+                "family"
+            ],
+            "budget_preference": "medium",
+            "accessibility": true,
+            "wheelchair_friendly": true,
+            "seating_capacity": 60,
+            "combo_deal": "-25%",
+            "rating": 4.3
+        },
+        "image_path": "/images/Pizza Hut.jpg"
+    },
+    {
+        "text": "Subway (Terminal 1, Floor 2): Fresh sandwiches, customizable options. Prep time: 4-6 minutes. Price range: Low ($6-12). Open 06:00-23:00. Great for: Healthy, quick options. Vegetarian-friendly. Loyalty program: Free sub after 10 purchases.",
+        "metadata": {
+            "type": "restaurant",
+            "name": "Subway",
+            "terminal": "T1",
+            "location": "T1_F2_Food_Court",
+            "time_required": 6,
+            "category": "fast_food",
+            "price_range": "low",
+            "priority": "quick",
+            "queue_time": 4,
+            "traveler_type": [
+                "solo",
+                "business"
+            ],
+            "budget_preference": "low",
+            "accessibility": true,
+            "wheelchair_friendly": true,
+            "seating_capacity": 25,
+            "vegetarian": true,
+            "loyalty_program": true,
+            "rating": 4.5
+        },
+        "image_path": "/images/Subway.jpg"
+    },
+    {
+        "text": "Domino\u0027s (Terminal 1, Floor 2): Pizza delivery and takeaway. Prep time: 10-12 minutes. Price range: Low-Medium ($8-18). Open 06:00-23:00. BEST FOR: Groups with 30+ min boarding time. NOT suitable if \u003c15 min to gate. Fast delivery available via app.",
+        "metadata": {
+            "type": "restaurant",
+            "name": "Domino's",
+            "terminal": "T1",
+            "location": "T1_F2_Food_Court",
+            "time_required": 12,
+            "category": "fast_food",
+            "price_range": "low",
+            "priority": "normal",
+            "queue_time": 3,
+            "traveler_type": [
+                "family",
+                "group"
+            ],
+            "budget_preference": "low",
+            "accessibility": true,
+            "wheelchair_friendly": true,
+            "delivery_available": true,
+            "rating": 4.9
+        },
+        "image_path": "/images/Domino's.jpg"
+    },
+    {
+        "text": "Samosa Corner (Terminal 1, Floor 2): Indian snacks and street food. Prep time: 3-5 minutes. Price range: Low ($3-8). Open 06:00-22:00. PERFECT FOR: Budget travelers, quick snacks, authentic flavors. Vegetarian options: 80%. Bestsellers: Samosas, Chaat, Dosa.",
+        "metadata": {
+            "type": "restaurant",
+            "name": "Samosa Corner",
+            "terminal": "T1",
+            "location": "T1_F2_Food_Court",
+            "time_required": 5,
+            "category": "street_food",
+            "price_range": "low",
+            "priority": "quick",
+            "queue_time": 3,
+            "traveler_type": [
+                "solo",
+                "business"
+            ],
+            "budget_preference": "low",
+            "accessibility": true,
+            "wheelchair_friendly": false,
+            "vegetarian_percentage": 80,
+            "rating": 3.3
+        },
+        "image_path": "/images/Samosa Corner.jpg"
+    },
+    {
+        "text": "Sushi Express (Terminal 2, Floor 2): Fresh sushi, Japanese cuisine, quick service. Prep time: 2-4 minutes for pre-made items, 6-8 for special orders. Price range: Medium-High ($12-20). Open 06:00-23:00. Premium quality, suitable for business travelers and food enthusiasts.",
+        "metadata": {
+            "type": "restaurant",
+            "name": "Sushi Express",
+            "terminal": "T2",
+            "location": "T2_F2_Departure_Area",
+            "time_required": 6,
+            "category": "premium_dining",
+            "price_range": "medium",
+            "priority": "normal",
+            "queue_time": 2,
+            "traveler_type": [
+                "business",
+                "solo"
+            ],
+            "budget_preference": "high",
+            "accessibility": true,
+            "wheelchair_friendly": true,
+            "seating_capacity": 40,
+            "rating": 3.4
+        },
+        "image_path": "/images/Sushi Express.jpg"
+    },
+    {
+        "text": "First Class Lounge Restaurant (Terminal 2, Floor 3): Premium dining exclusively for First Class \u0026 Business passengers. Multi-cuisine buffet: Indian, Chinese, Mediterranean. Open 05:00-23:00. Complimentary beverages, premium wines, cold cuts. Average dining time: 30 minutes.",
+        "metadata": {
+            "type": "restaurant",
+            "name": "First Class Lounge Dining",
+            "terminal": "T2",
+            "location": "T2_F3_Lounge",
+            "time_required": 30,
+            "category": "premium_dining",
+            "price_range": "high",
+            "priority": "premium",
+            "queue_time": 0,
+            "traveler_type": [
+                "business"
+            ],
+            "budget_preference": "high",
+            "accessibility": true,
+            "wheelchair_friendly": true,
+            "complimentary": true,
+            "premium_beverages": true,
+            "seating_capacity": 80,
+            "rating": 3.3
+        },
+        "image_path": "/images/First Class Lounge.jpg"
+    },
+    {
+        "text": "Louis Vuitton Duty-Free (Terminal 1, Floor 2): Luxury handbags, luggage, accessories. Price range: High ($500-5000+). Open 07:00-21:00. Tax-free shopping available for international travelers. Expert staff for styling advice. Exclusive airport collections.",
+        "metadata": {
+            "type": "shop",
+            "name": "Louis Vuitton",
+            "terminal": "T1",
+            "location": "T1_F2_Luxury_Retail",
+            "time_required": 15,
+            "category": "luxury_retail",
+            "price_range": "high",
+            "priority": "premium",
+            "queue_time": 1,
+            "traveler_type": [
+                "business"
+            ],
+            "budget_preference": "high",
+            "accessibility": true,
+            "opening_time": "07:00",
+            "closing_time": "21:00",
+            "temporary_closed": false,
+            "wheelchair_friendly": true,
+            "tax_free": true,
+            "seating_capacity": 20,
+            "rating": 4.8
+        },
+        "image_path": "/images/Louis Vuitton.jpg"
+    },
+    {
+        "text": "Duty Free Shop (Terminal 1, Floor 2): Duty-free perfumes, cosmetics, liquor, cigarettes. Price range: Low-Medium ($10-300). Open 07:00-21:00. -30% discount on liquor for international travelers. Payment: All cards accepted.",
+        "metadata": {
+            "type": "shop",
+            "name": "Duty Free",
+            "terminal": "T1",
+            "location": "T1_F2_Duty_Free",
+            "time_required": 10,
+            "category": "duty_free",
+            "price_range": "low",
+            "priority": "normal",
+            "queue_time": 5,
+            "traveler_type": [
+                "solo",
+                "business"
+            ],
+            "budget_preference": "low",
+            "accessibility": true,
+            "opening_time": "07:00",
+            "closing_time": "21:00",
+            "temporary_closed": false,
+            "wheelchair_friendly": true,
+            "tax_free": true,
+            "liquor_discount": "-30%",
+            "rating": 4.6
+        },
+        "image_path": "/images/Duty Free.jpg"
+    },
+    {
+        "text": "WHSmith Bookstore (Terminal 1, Floor 2): Books, magazines, newspapers, stationery. Price range: Low-Medium ($3-50). Open 07:00-21:00. Bestseller section updated daily. Includes travel guides, children\u0027s books, tech magazines. Takeaway recommended.",
+        "metadata": {
+            "type": "shop",
+            "name": "WHSmith Bookstore",
+            "terminal": "T1",
+            "location": "T1_F2_Retail",
+            "time_required": 8,
+            "category": "books_retail",
+            "price_range": "low",
+            "priority": "normal",
+            "queue_time": 2,
+            "traveler_type": [
+                "solo",
+                "business"
+            ],
+            "budget_preference": "low",
+            "accessibility": true,
+            "opening_time": "07:00",
+            "closing_time": "21:00",
+            "temporary_closed": false,
+            "wheelchair_friendly": true,
+            "seating_capacity": 15,
+            "rating": 3.6
+        },
+        "image_path": "/images/WHSmith.jpg"
+    },
+    {
+        "text": "TechZone Electronics (Terminal 1, Floor 2): Laptops, mobile phones, tablets, accessories. Price range: Medium-High ($50-2000). Open 07:00-21:00. Tech support available. Latest gadgets on display. USB-C charging cables and power banks bestsellers.",
+        "metadata": {
+            "type": "shop",
+            "name": "TechZone",
+            "terminal": "T1",
+            "location": "T1_F2_Electronics",
+            "time_required": 12,
+            "category": "electronics",
+            "price_range": "high",
+            "priority": "normal",
+            "queue_time": 3,
+            "traveler_type": [
+                "business",
+                "solo"
+            ],
+            "budget_preference": "high",
+            "accessibility": true,
+            "opening_time": "07:00",
+            "closing_time": "21:00",
+            "temporary_closed": false,
+            "wheelchair_friendly": true,
+            "tech_support": true,
+            "rating": 4.1
+        },
+        "image_path": "/images/TechZone.jpg"
+    },
+    {
+        "text": "Gift Shop (Terminal 1, Floor 2): Souvenirs, local handicrafts, gift items. Price range: Low-Medium ($5-100). Open 07:00-21:00. Perfect for: Last-minute gifts, local memorabilia. Same-day gift wrapping available.",
+        "metadata": {
+            "type": "shop",
+            "name": "Gift Shop",
+            "terminal": "T1",
+            "location": "T1_F2_Retail",
+            "time_required": 10,
+            "category": "gifts_souvenirs",
+            "price_range": "low",
+            "priority": "normal",
+            "queue_time": 2,
+            "traveler_type": [
+                "family",
+                "solo"
+            ],
+            "budget_preference": "low",
+            "accessibility": true,
+            "opening_time": "07:00",
+            "closing_time": "21:00",
+            "temporary_closed": false,
+            "wheelchair_friendly": true,
+            "gift_wrapping": true,
+            "rating": 4.4
+        },
+        "image_path": "/images/Gift Shop.jpg"
+    },
+    {
+        "text": "Gucci Premium Fashion (Terminal 2, Floor 2): Designer handbags, clothes, accessories. Price range: High ($800-8000+). Open 07:00-21:00. Exclusive airport-only collections. Premium styling consultation. Tax-free for international travelers.",
+        "metadata": {
+            "type": "shop",
+            "name": "Gucci",
+            "terminal": "T2",
+            "location": "T2_F2_Luxury",
+            "time_required": 20,
+            "category": "luxury_retail",
+            "price_range": "high",
+            "priority": "premium",
+            "queue_time": 0,
+            "traveler_type": [
+                "business"
+            ],
+            "budget_preference": "high",
+            "accessibility": true,
+            "opening_time": "07:00",
+            "closing_time": "21:00",
+            "temporary_closed": false,
+            "wheelchair_friendly": true,
+            "tax_free": true,
+            "rating": 4.2
+        },
+        "image_path": "/images/Gucci.jpg"
+    },
+    {
+        "text": "Prada Designer Boutique (Terminal 2, Floor 2): Premium fashion, handbags, eyewear. Price range: High ($600-7000+). Open 07:00-21:00. Personal shopper available. Exclusive limited editions available only at airport.",
+        "metadata": {
+            "type": "shop",
+            "name": "Prada",
+            "terminal": "T2",
+            "location": "T2_F2_Luxury",
+            "time_required": 20,
+            "category": "luxury_retail",
+            "price_range": "high",
+            "priority": "premium",
+            "queue_time": 0,
+            "traveler_type": [
+                "business"
+            ],
+            "budget_preference": "high",
+            "accessibility": true,
+            "opening_time": "07:00",
+            "closing_time": "21:00",
+            "temporary_closed": false,
+            "wheelchair_friendly": true,
+            "personal_shopper": true,
+            "rating": 3.3
+        },
+        "image_path": "/images/Prada.jpg"
+    },
+    {
+        "text": "Dior Fashion House (Terminal 2, Floor 2): Perfume, cosmetics, haute couture. Price range: Medium-High ($100-5000). Open 07:00-21:00. Fragrance testers available. Skincare and makeup experts on staff.",
+        "metadata": {
+            "type": "shop",
+            "name": "Dior",
+            "terminal": "T2",
+            "location": "T2_F2_Luxury",
+            "time_required": 15,
+            "category": "luxury_retail",
+            "price_range": "high",
+            "priority": "normal",
+            "queue_time": 1,
+            "traveler_type": [
+                "solo",
+                "business"
+            ],
+            "budget_preference": "high",
+            "accessibility": true,
+            "opening_time": "07:00",
+            "closing_time": "21:00",
+            "temporary_closed": false,
+            "wheelchair_friendly": true,
+            "rating": 4.8
+        },
+        "image_path": "/images/Dior.jpg"
+    },
+    {
+        "text": "Burberry Premium Collection (Terminal 2, Floor 2): Designer fashion, trench coats, accessories. Price range: High ($400-3000). Open 07:00-21:00. Iconic Burberry check patterns. Personal styling services available.",
+        "metadata": {
+            "type": "shop",
+            "name": "Burberry",
+            "terminal": "T2",
+            "location": "T2_F2_Luxury",
+            "time_required": 15,
+            "category": "luxury_retail",
+            "price_range": "high",
+            "priority": "normal",
+            "queue_time": 1,
+            "traveler_type": [
+                "business"
+            ],
+            "budget_preference": "high",
+            "accessibility": true,
+            "opening_time": "07:00",
+            "closing_time": "21:00",
+            "temporary_closed": false,
+            "wheelchair_friendly": true,
+            "rating": 4.1
+        },
+        "image_path": "/images/Burberry.jpg"
+    },
+    {
+        "text": "Book World (Terminal 2, Floor 2): Extensive collection of books, e-readers, travel guides. Price range: Low-Medium ($5-80). Open 07:00-21:00. Reading lounge available. Same-day digital ordering for e-books.",
+        "metadata": {
+            "type": "shop",
+            "name": "Book World",
+            "terminal": "T2",
+            "location": "T2_F2_Retail",
+            "time_required": 12,
+            "category": "books_retail",
+            "price_range": "low",
+            "priority": "normal",
+            "queue_time": 2,
+            "traveler_type": [
+                "solo",
+                "business"
+            ],
+            "budget_preference": "low",
+            "accessibility": true,
+            "opening_time": "07:00",
+            "closing_time": "21:00",
+            "temporary_closed": false,
+            "wheelchair_friendly": true,
+            "reading_lounge": true,
+            "rating": 3
+        },
+        "image_path": "/images/Book World.jpg"
+    },
+    {
+        "text": "Pharmacy (Terminal 1, Floor 1): Medicines, first-aid, health products, vitamins. Price range: Low-Medium ($5-50). Open 06:00-23:00. Licensed pharmacist on duty. OTC pain relief, cold medicine, digestive aids most popular.",
+        "metadata": {
+            "type": "shop",
+            "name": "Pharmacy",
+            "terminal": "T1",
+            "location": "T1_F1_Services",
+            "time_required": 5,
+            "category": "pharmacy",
+            "price_range": "low",
+            "priority": "normal",
+            "queue_time": 2,
+            "traveler_type": [
+                "solo",
+                "family"
+            ],
+            "budget_preference": "low",
+            "accessibility": true,
+            "opening_time": "06:00",
+            "closing_time": "23:00",
+            "temporary_closed": false,
+            "wheelchair_friendly": true,
+            "pharmacist_available": true,
+            "rating": 4.3
+        },
+        "image_path": "/images/Pharmacy.jpg"
+    },
+    {
+        "text": "Restroom Facilities - Terminal 1 (Multiple Locations): Men\u0027s \u0026 Women\u0027s facilities on Floors 0, 1, 2. Open 00:00-23:59. Features: Accessible stalls, baby changing tables, paper towels \u0026 hand dryers. Wait time: 1-3 min. Emergency call button available.",
+        "metadata": {
+            "type": "service",
+            "name": "Restrooms Terminal 1",
+            "terminal": "T1",
+            "location": "Restrooms_T1_F2_A",
+            "time_required": 5,
+            "category": "facility",
+            "priority": "normal",
+            "queue_time": 2,
+            "traveler_type": [
+                "solo",
+                "family",
+                "elderly"
+            ],
+            "budget_preference": "low",
+            "accessibility": true,
+            "wheelchair_friendly": true,
+            "baby_changing": true,
+            "rating": 3.5
+        },
+        "image_path": ""
+    },
+    {
+        "text": "Drinking Water Stations: Located on all floors, Terminals 1 \u0026 2. Open 24/7. Free filtered water. Multiple stations per floor for accessibility. Low queue times.",
+        "metadata": {
+            "type": "service",
+            "name": "Drinking Water",
+            "terminal": "T1-T2",
+            "location": "Water_Stations",
+            "time_required": 2,
+            "category": "facility",
+            "priority": "normal",
+            "queue_time": 0,
+            "traveler_type": [
+                "solo",
+                "family",
+                "elderly"
+            ],
+            "budget_preference": "low",
+            "accessibility": true,
+            "wheelchair_friendly": true,
+            "free": true,
+            "rating": 4.9
+        },
+        "image_path": ""
+    },
+    {
+        "text": "ATM Machines: Multiple ATMs on Floors 1-2 of both terminals. Available 24/7. Accept international cards. Fee: $2-5 per withdrawal depending on bank. Nearby ATMs: T1F2 (2 units), T2F2 (2 units).",
+        "metadata": {
+            "type": "service",
+            "name": "ATM Services",
+            "terminal": "T1-T2",
+            "location": "ATM_Locations",
+            "time_required": 3,
+            "category": "financial",
+            "priority": "normal",
+            "queue_time": 1,
+            "traveler_type": [
+                "solo",
+                "business"
+            ],
+            "budget_preference": "low",
+            "accessibility": true,
+            "wheelchair_friendly": true,
+            "international_cards": true,
+            "rating": 3.5
+        },
+        "image_path": "/images/ATM.jpg"
+    },
+    {
+        "text": "Elevators / Lifts: Available on all floors, both terminals. Accessible for wheelchairs, strollers, luggage. Wait time: 1-2 minutes. Emergency phone inside each elevator.",
+        "metadata": {
+            "type": "service",
+            "name": "Elevators",
+            "terminal": "T1-T2",
+            "location": "Elevator_Locations",
+            "time_required": 1,
+            "category": "facility",
+            "priority": "normal",
+            "queue_time": 2,
+            "traveler_type": [
+                "elderly",
+                "family"
+            ],
+            "budget_preference": "low",
+            "accessibility": true,
+            "wheelchair_friendly": true,
+            "emergency_phone": true,
+            "rating": 4.2
+        },
+        "image_path": ""
+    },
+    {
+        "text": "WiFi Service: Free airport WiFi available throughout terminals. Network: AirportWiFi-Free. Speed: 10-50 Mbps. Connection stable near gates. Password-free, no registration required.",
+        "metadata": {
+            "type": "service",
+            "name": "WiFi Service",
+            "terminal": "T1-T2",
+            "location": "Airport_Coverage",
+            "time_required": 1,
+            "category": "connectivity",
+            "priority": "normal",
+            "queue_time": 0,
+            "traveler_type": [
+                "solo",
+                "business"
+            ],
+            "budget_preference": "low",
+            "accessibility": true,
+            "wheelchair_friendly": true,
+            "free": true,
+            "speed_mbps": 50,
+            "rating": 4.4
+        },
+        "image_path": ""
+    },
+    {
+        "text": "Mobile Charging Stations: Fast charging available at Gates A1, A3, B2, CC3. USB-A and USB-C ports. Charging time: 1-2 hours for 50% charge. Monitored by airport staff.",
+        "metadata": {
+            "type": "service",
+            "name": "Charging Stations",
+            "terminal": "T1-T2",
+            "location": "Gate_Charging",
+            "time_required": 90,
+            "category": "facility",
+            "priority": "normal",
+            "queue_time": 1,
+            "traveler_type": [
+                "solo",
+                "business"
+            ],
+            "budget_preference": "low",
+            "accessibility": true,
+            "wheelchair_friendly": true,
+            "usb_ports": [
+                "USB-A",
+                "USB-C"
+            ],
+            "rating": 3.9
+        },
+        "image_path": ""
+    },
+    {
+        "text": "Information Desks: Located Floor 1 (T1) and Floor 1 (T2). Staff available 06:00-22:00. Services: Flight info, directions, lost baggage assistance. Average wait: 3-5 minutes. Multilingual support available.",
+        "metadata": {
+            "type": "service",
+            "name": "Information Desk",
+            "terminal": "T1-T2",
+            "location": "Information_Counter",
+            "time_required": 5,
+            "category": "information",
+            "priority": "normal",
+            "queue_time": 3,
+            "traveler_type": [
+                "solo",
+                "family",
+                "elderly"
+            ],
+            "budget_preference": "low",
+            "accessibility": true,
+            "wheelchair_friendly": true,
+            "multilingual": true,
+            "rating": 4.8
+        },
+        "image_path": "/images/Information Desk.jpg"
+    },
+    {
+        "text": "Currency Exchange: Located Floor 1 \u0026 2 (T1) and Floor 2 (T2). Open 06:00-22:00. Live exchange rates displayed. Commission: 2-3%. All major currencies accepted.",
+        "metadata": {
+            "type": "service",
+            "name": "Currency Exchange",
+            "terminal": "T1-T2",
+            "location": "Currency_Exchange",
+            "time_required": 5,
+            "category": "financial",
+            "priority": "normal",
+            "queue_time": 2,
+            "traveler_type": [
+                "solo",
+                "business"
+            ],
+            "budget_preference": "low",
+            "accessibility": true,
+            "wheelchair_friendly": true,
+            "commission_percent": 3,
+            "rating": 3.5
+        },
+        "image_path": "/images/Currency Exchange.jpg"
+    },
+    {
+        "text": "Emergency Exit - Terminal 1 North Wing: Direct exit to ground level. Clearly marked with illuminated exit signs. Emergency alarm: Red button. Average evacuation time: 4-6 minutes for full terminal. Used during emergencies or fire drills only.",
+        "metadata": {
+            "type": "emergency",
+            "name": "Emergency Exit North",
+            "terminal": "T1",
+            "location": "Emergency_Exit_North",
+            "time_required": 2,
+            "category": "emergency",
+            "priority": "emergency",
+            "queue_time": 0,
+            "traveler_type": [
+                "solo",
+                "family"
+            ],
+            "budget_preference": "low",
+            "accessibility": true,
+            "wheelchair_friendly": true,
+            "emergency_alarm": true,
+            "rating": 4.9
+        },
+        "image_path": ""
+    },
+    {
+        "text": "Emergency Exit - Terminal 1 South Wing: Direct exit to ground level. Emergency slides for rapid evacuation. Marked with reflective signage. Meeting point: South Parking Area.",
+        "metadata": {
+            "type": "emergency",
+            "name": "Emergency Exit South",
+            "terminal": "T1",
+            "location": "Emergency_Exit_South",
+            "time_required": 2,
+            "category": "emergency",
+            "priority": "emergency",
+            "queue_time": 0,
+            "traveler_type": [
+                "solo",
+                "family"
+            ],
+            "budget_preference": "low",
+            "accessibility": true,
+            "wheelchair_friendly": false,
+            "emergency_slides": true,
+            "rating": 3.3
+        },
+        "image_path": ""
+    },
+    {
+        "text": "Medical Room Terminal 1 Floor 2: Staffed 24/7 by qualified nurses. First-aid kits, defibrillator (AED), oxygen available. Average response time: \u003c2 minutes from any gate. For cardiac emergencies: Call airport security immediately.",
+        "metadata": {
+            "type": "emergency",
+            "name": "Medical Room T1",
+            "terminal": "T1",
+            "location": "Medical_Room_T1_F2",
+            "time_required": 2,
+            "category": "medical",
+            "priority": "emergency",
+            "queue_time": 0,
+            "traveler_type": [
+                "solo",
+                "family",
+                "elderly"
+            ],
+            "budget_preference": "low",
+            "accessibility": true,
+            "wheelchair_friendly": true,
+            "staff_availability": "24/7",
+            "defibrillator": true,
+            "rating": 3.7
+        },
+        "image_path": ""
+    },
+    {
+        "text": "Medical Room Terminal 2 Floor 2: Advanced medical facility with on-site doctor. Equipped for trauma, cardiac, respiratory emergencies. Emergency hotline: Dial *911 from any airport phone. Ambulance response: \u003c5 minutes.",
+        "metadata": {
+            "type": "emergency",
+            "name": "Medical Room T2",
+            "terminal": "T2",
+            "location": "Medical_Room_T2_F2",
+            "time_required": 3,
+            "category": "medical",
+            "priority": "emergency",
+            "queue_time": 0,
+            "traveler_type": [
+                "solo",
+                "family",
+                "elderly"
+            ],
+            "budget_preference": "low",
+            "accessibility": true,
+            "wheelchair_friendly": true,
+            "doctor_on_duty": true,
+            "ambulance_response": "5 minutes",
+            "rating": 4.1
+        },
+        "image_path": ""
+    },
+    {
+        "text": "Safety Zone Terminal 1: Designated muster point during emergencies. Located east of Gate A5. Capacity: 500+ people. Assembly time target: 8 minutes. Follow airport staff instructions.",
+        "metadata": {
+            "type": "emergency",
+            "name": "Safety Zone T1",
+            "terminal": "T1",
+            "location": "Safety_Zone_T1",
+            "time_required": 3,
+            "category": "safety",
+            "priority": "emergency",
+            "queue_time": 0,
+            "traveler_type": [
+                "solo",
+                "family"
+            ],
+            "budget_preference": "low",
+            "accessibility": true,
+            "wheelchair_friendly": true,
+            "capacity": 500,
+            "rating": 3.5
+        },
+        "image_path": ""
+    },
+    {
+        "text": "Security Office Terminal 2: Contact for lost property, suspicious activity reporting, security concerns. Open 05:00-23:00. Office location: Ground floor near main entrance. Non-emergency contact: Extension 1234.",
+        "metadata": {
+            "type": "emergency",
+            "name": "Security Office",
+            "terminal": "T2",
+            "location": "Security_Office_T2",
+            "time_required": 5,
+            "category": "security",
+            "priority": "normal",
+            "queue_time": 2,
+            "traveler_type": [
+                "solo",
+                "family"
+            ],
+            "budget_preference": "low",
+            "accessibility": true,
+            "wheelchair_friendly": true,
+            "rating": 3.1
+        },
+        "image_path": ""
+    },
+    {
+        "text": "Baggage Claim Area 1 Terminal 1 Floor 0: Carousels 1-3. Average wait time: 12-18 minutes from arrival. Busy hours: 09:00-11:00am. Lost baggage counter nearby. Tracking system displays carousel assignments.",
+        "metadata": {
+            "type": "service",
+            "name": "Baggage Claim 1 T1",
+            "terminal": "T1",
+            "location": "Baggage_Claim_Area_1",
+            "time_required": 15,
+            "category": "baggage",
+            "priority": "normal",
+            "queue_time": 3,
+            "traveler_type": [
+                "solo",
+                "family"
+            ],
+            "budget_preference": "low",
+            "accessibility": true,
+            "wheelchair_friendly": true,
+            "carousels": [
+                1,
+                2,
+                3
+            ],
+            "average_wait_minutes": 15,
+            "rating": 3.4
+        },
+        "image_path": "/images/Baggage Claim.jpg"
+    },
+    {
+        "text": "Baggage Claim Area 2 Terminal 1 Floor 0: Carousels 4-6. Left Luggage secure storage available. Fees: $10/day first bag, $5/day each additional. Wait time: 10-15 minutes.",
+        "metadata": {
+            "type": "service",
+            "name": "Baggage Claim 2 T1",
+            "terminal": "T1",
+            "location": "Baggage_Claim_Area_2",
+            "time_required": 15,
+            "category": "baggage",
+            "priority": "normal",
+            "queue_time": 2,
+            "traveler_type": [
+                "solo",
+                "family"
+            ],
+            "budget_preference": "low",
+            "accessibility": true,
+            "wheelchair_friendly": true,
+            "carousels": [
+                4,
+                5,
+                6
+            ],
+            "left_luggage": true,
+            "storage_fee_daily": 10,
+            "rating": 3.1
+        },
+        "image_path": "/images/Baggage Claim.jpg"
+    },
+    {
+        "text": "Lost Baggage Counter Terminal 1 Floor 0: Report lost or damaged bags immediately. Staff speaks 10+ languages. Process time: 15-30 minutes. Insurance claim forms available. Compensation depends on ticket type.",
+        "metadata": {
+            "type": "service",
+            "name": "Lost Baggage Counter",
+            "terminal": "T1",
+            "location": "Lost_Baggage_T1",
+            "time_required": 20,
+            "category": "baggage_support",
+            "priority": "normal",
+            "queue_time": 5,
+            "traveler_type": [
+                "solo",
+                "family"
+            ],
+            "budget_preference": "low",
+            "accessibility": true,
+            "wheelchair_friendly": true,
+            "multilingual_staff": true,
+            "insurance_claims": true,
+            "rating": 3.8
+        },
+        "image_path": ""
+    },
+    {
+        "text": "Baggage Belt 1 Terminal 1 Ground: International arrival conveyor. Operational 05:00-23:00. Status: Operational. Carousel speed: Adjustable. Average belt load time: 3-5 minutes after flight arrival.",
+        "metadata": {
+            "type": "service",
+            "name": "Baggage Belt 1",
+            "terminal": "T1",
+            "location": "Baggage_Belt_1",
+            "time_required": 2,
+            "category": "baggage_infrastructure",
+            "priority": "normal",
+            "queue_time": 0,
+            "traveler_type": [
+                "solo",
+                "family"
+            ],
+            "budget_preference": "low",
+            "accessibility": true,
+            "wheelchair_friendly": true,
+            "status": "operational",
+            "rating": 3.8
+        },
+        "image_path": "/images/Baggage Claim.jpg"
+    },
+    {
+        "text": "Terminal 2 Baggage Claims 1-3 Floor 0: Premium baggage handling. Average wait: 8-12 minutes. Carousels 1-4, 5-8, 9-11. Concierge assistance for premium passengers available. Priority zone for First Class luggage.",
+        "metadata": {
+            "type": "service",
+            "name": "T2 Baggage Claims",
+            "terminal": "T2",
+            "location": "T2_Baggage_Claims",
+            "time_required": 12,
+            "category": "baggage",
+            "priority": "normal",
+            "queue_time": 2,
+            "traveler_type": [
+                "solo",
+                "business"
+            ],
+            "budget_preference": "medium",
+            "accessibility": true,
+            "wheelchair_friendly": true,
+            "concierge_service": true,
+            "premium_zone": true,
+            "rating": 4.1
+        },
+        "image_path": "/images/Baggage Claim.jpg"
+    },
+    {
+        "text": "RECOMMENDATION: Best Food Option for Gate A2 (5-10 min available): Samosa Corner offers authentic quick snacks in 3-5 minutes. Cost: ~$5-8. Alternative: Starbucks for coffee \u0026 pastry in 4 minutes (~$5-7). Avoid: Pizza Hut (12+ min).",
+        "metadata": {
+            "type": "recommendation",
+            "name": "Quick Food Near Gate A2",
+            "terminal": "T1",
+            "location": "Gate_A2_Vicinity",
+            "time_required": 5,
+            "category": "food_recommendation",
+            "price_range": "low",
+            "priority": "quick",
+            "queue_time": 3,
+            "traveler_type": [
+                "solo",
+                "business"
+            ],
+            "budget_preference": "low",
+            "accessibility": true,
+            "wheelchair_friendly": true,
+            "recommended_options": [
+                "Samosa Corner",
+                "Starbucks"
+            ],
+            "avg_cost": 6,
+            "rating": 4.3
+        },
+        "image_path": ""
+    },
+    {
+        "text": "RECOMMENDATION: Running Late to Gate A5? (Final call in 5 min): Take express north corridor route (3 min). Skip food entirely. Head directly to gate, no shopping. Probability of missing flight: 10-15% if you follow this route. Spare time: 2 minutes.",
+        "metadata": {
+            "type": "recommendation",
+            "name": "Emergency Route - Final Call",
+            "terminal": "T1",
+            "location": "Express_Route",
+            "time_required": 3,
+            "category": "emergency_routing",
+            "price_range": "low",
+            "priority": "quick",
+            "queue_time": 0,
+            "traveler_type": [
+                "solo"
+            ],
+            "budget_preference": "low",
+            "accessibility": false,
+            "wheelchair_friendly": false,
+            "risk_level": "high",
+            "miss_flight_probability": "15%",
+            "rating": 3.8
+        },
+        "image_path": ""
+    },
+    {
+        "text": "RECOMMENDATION: Budget Traveler with 45 min to boarding: Start with Samosa Corner ($6, 5 min) â†’ Use ATM ($2 fee, 3 min) â†’ Duty Free liquor (-30% sale, 10 min) â†’ Rest at gate. Total: 20 min, cost: ~$20. Remaining: 25 min buffer.",
+        "metadata": {
+            "type": "recommendation",
+            "name": "Budget Traveler 45 Min Itinerary",
+            "terminal": "T1",
+            "location": "Budget_Route",
+            "time_required": 20,
+            "category": "itinerary",
+            "price_range": "low",
+            "priority": "normal",
+            "queue_time": 5,
+            "traveler_type": [
+                "solo"
+            ],
+            "budget_preference": "low",
+            "accessibility": true,
+            "wheelchair_friendly": true,
+            "total_cost": 20,
+            "stops": [
+                "Samosa Corner",
+                "ATM",
+                "Duty Free"
+            ],
+            "buffer_time": 25,
+            "rating": 3.8
+        },
+        "image_path": ""
+    },
+    {
+        "text": "RECOMMENDATION: Premium Traveler with 90 min to boarding: Enter T2 VIP Fast Track â†’ First Class Lounge access â†’ Premium dining (30 min) â†’ Dior/Prada shopping (30 min) â†’ Gate AA2 priority boarding. Cost: ~$50+ (included in First Class fare). Experience rating: 4.8/5.",
+        "metadata": {
+            "type": "recommendation",
+            "name": "Premium 90 Min Luxury Experience",
+            "terminal": "T2",
+            "location": "T2_Premium",
+            "time_required": 60,
+            "category": "premium_itinerary",
+            "price_range": "high",
+            "priority": "premium",
+            "queue_time": 0,
+            "traveler_type": [
+                "business"
+            ],
+            "budget_preference": "high",
+            "accessibility": true,
+            "wheelchair_friendly": true,
+            "stops": [
+                "First Class Lounge",
+                "Premium Dining",
+                "Dior",
+                "Prada"
+            ],
+            "experience_rating": 4.8,
+            "total_cost": 50,
+            "rating": 4.7
+        },
+        "image_path": "/images/First Class Lounge.jpg"
+    },
+    {
+        "text": "RECOMMENDATION: Family with Kids (2-hour layover): Secure baggage at Left Luggage T1 ($10) â†’ McDonald\u0027s family meal (20 min, $35) â†’ Kids Play Area T2 F2 (40 min, free) â†’ Book World (15 min, $10-20) â†’ Gate. Total: Budget-friendly, stress-free.",
+        "metadata": {
+            "type": "recommendation",
+            "name": "Family-Friendly Layover Plan",
+            "terminal": "T1-T2",
+            "location": "Family_Route",
+            "time_required": 85,
+            "category": "family_itinerary",
+            "price_range": "low",
+            "priority": "normal",
+            "queue_time": 5,
+            "traveler_type": [
+                "family"
+            ],
+            "budget_preference": "low",
+            "accessibility": true,
+            "wheelchair_friendly": true,
+            "stops": [
+                "Left Luggage",
+                "McDonald\u0027s",
+                "Kids Play Area",
+                "Book World"
+            ],
+            "total_cost": 55,
+            "stress_level": "low",
+            "rating": 3.2
+        },
+        "image_path": ""
+    },
+    {
+        "text": "RECOMMENDATION: Business Traveler (30 min before boarding): Skip dining. Use: Currency Exchange (5 min, convert $50) â†’ Costa Coffee quick coffee (3 min, $5) â†’ WiFi check work emails (5 min) â†’ Gate. Save 17 min buffer for unexpected delays.",
+        "metadata": {
+            "type": "recommendation",
+            "name": "Efficient Business 30 Min",
+            "terminal": "T1",
+            "location": "Business_Route",
+            "time_required": 13,
+            "category": "business_itinerary",
+            "price_range": "low",
+            "priority": "quick",
+            "queue_time": 2,
+            "traveler_type": [
+                "business"
+            ],
+            "budget_preference": "medium",
+            "accessibility": true,
+            "wheelchair_friendly": true,
+            "stops": [
+                "Currency Exchange",
+                "Costa Coffee",
+                "WiFi"
+            ],
+            "buffer_time": 17,
+            "total_cost": 5,
+            "rating": 3.2
+        },
+        "image_path": ""
+    },
+    {
+        "text": "RECOMMENDATION: Avoid Peak Hours (11am-1pm, 4pm-6pm): These times have 40% longer security queues and corridor congestion. Alternative: Travel early morning (6am-9am) or mid-afternoon (2pm-4pm) for 50% shorter wait times and relaxed terminal atmosphere.",
+        "metadata": {
+            "type": "recommendation",
+            "name": "Peak Hour Avoidance Tip",
+            "terminal": "T1-T2",
+            "location": "Airport_Wide",
+            "time_required": 0,
+            "category": "planning",
+            "price_range": "low",
+            "priority": "normal",
+            "queue_time": 40,
+            "traveler_type": [
+                "solo",
+                "family",
+                "business"
+            ],
+            "budget_preference": "low",
+            "accessibility": true,
+            "wheelchair_friendly": true,
+            "peak_hours": [
+                "11:00-13:00",
+                "16:00-18:00"
+            ],
+            "time_saved": "50%",
+            "rating": 4.8
+        },
+        "image_path": ""
+    },
+    {
+        "text": "RECOMMENDATION: Connecting Flight T1â†’T2 (45 min connection): Use Skybridge (4 min) â†’ Direct to T2 Security (8 min) â†’ Proceed to Gate AA2 (5 min). Total: 17 min. Your luggage auto-transfers. Buffer: 28 min. Success rate: 95%.",
+        "metadata": {
+            "type": "recommendation",
+            "name": "Quick Connection T1 to T2",
+            "terminal": "T1-T2",
+            "location": "Skybridge",
+            "time_required": 17,
+            "category": "connection_guide",
+            "price_range": "low",
+            "priority": "quick",
+            "queue_time": 2,
+            "traveler_type": [
+                "solo",
+                "business"
+            ],
+            "budget_preference": "low",
+            "accessibility": true,
+            "wheelchair_friendly": true,
+            "auto_luggage_transfer": true,
+            "success_rate": "95%",
+            "buffer_time": 28,
+            "rating": 4.9
+        },
+        "image_path": ""
+    },
+    {
+        "text": "RECOMMENDATION: Accessibility Routes for Elderly/Wheelchair: Always use Elevators (not escalators) â†’ Accessible restrooms on each floor (blue signs) â†’ Elevators connect all floors efficiently. Staff assistance: Call any Help Desk. Wheelchair available at entrance if needed.",
+        "metadata": {
+            "type": "recommendation",
+            "name": "Accessibility-First Route",
+            "terminal": "T1-T2",
+            "location": "Accessible_Routes",
+            "time_required": 5,
+            "category": "accessibility",
+            "price_range": "low",
+            "priority": "normal",
+            "queue_time": 1,
+            "traveler_type": [
+                "elderly"
+            ],
+            "budget_preference": "low",
+            "accessibility": true,
+            "wheelchair_friendly": true,
+            "wheelchair_available": true,
+            "staff_assistance": "24/7",
+            "rating": 4.8
+        },
+        "image_path": ""
+    },
+    {
+        "text": "RECOMMENDATION: International Traveler, New to Airport? Start at Information Desk (Floor 1, 3-min walk from security) â†’ Get free airport map (multilingual) â†’ Ask staff for gate-specific directions â†’ Ask about Terminal 2 if connecting. Staff speaks 10+ languages. Response time: \u003c3 minutes.",
+        "metadata": {
+            "type": "recommendation",
+            "name": "New Traveler Orientation",
+            "terminal": "T1-T2",
+            "location": "Information_Desk",
+            "time_required": 5,
+            "category": "orientation",
+            "price_range": "low",
+            "priority": "normal",
+            "queue_time": 2,
+            "traveler_type": [
+                "solo"
+            ],
+            "budget_preference": "low",
+            "accessibility": true,
+            "wheelchair_friendly": true,
+            "multilingual_maps": true,
+            "response_time": "3 minutes",
+            "rating": 4.1
+        },
+        "image_path": ""
+    },
+    {
+        "text": "RECOMMENDATION: Shopping on Budget (30 min, \u003c$100): Duty Free liquor (-30%, $30-50) â†’ WHSmith book ($10-15) â†’ Gift shop souvenir ($15-20) â†’ Back to gate. Fast checkout at all stores. Tax-free for international travelers = Extra savings.",
+        "metadata": {
+            "type": "recommendation",
+            "name": "Budget Shopping Spree",
+            "terminal": "T1",
+            "location": "Shopping_Route",
+            "time_required": 25,
+            "category": "shopping",
+            "price_range": "low",
+            "priority": "normal",
+            "queue_time": 3,
+            "traveler_type": [
+                "solo"
+            ],
+            "budget_preference": "low",
+            "accessibility": true,
+            "wheelchair_friendly": true,
+            "stops": [
+                "Duty Free",
+                "WHSmith",
+                "Gift Shop"
+            ],
+            "total_budget": 100,
+            "tax_free_discount": true,
+            "rating": 3.2
+        },
+        "image_path": ""
+    },
+    {
+        "text": "RECOMMENDATION: Luxury Shopping Experience (90 min, Budget Flexible): T2 Gucci/Prada exclusive collections (45 min, $2000-10000) â†’ Dior fragrance boutique (20 min, $200-500) â†’ Premium Lounge rest \u0026 refresh (25 min) â†’ Boarding. VIP Personal shoppers available. Checkout can be arranged in-lounge.",
+        "metadata": {
+            "type": "recommendation",
+            "name": "Luxury Shopping Curated",
+            "terminal": "T2",
+            "location": "Luxury_Shopping_T2",
+            "time_required": 90,
+            "category": "luxury_shopping",
+            "price_range": "high",
+            "priority": "premium",
+            "queue_time": 0,
+            "traveler_type": [
+                "business"
+            ],
+            "budget_preference": "high",
+            "accessibility": true,
+            "wheelchair_friendly": true,
+            "stops": [
+                "Gucci",
+                "Prada",
+                "Dior"
+            ],
+            "personal_shopper": true,
+            "total_budget": 5000,
+            "checkout_in_lounge": true,
+            "rating": 4.1
+        },
+        "image_path": ""
+    },
+    {
+        "text": "RECOMMENDATION: Emergency Medical Situation: T1 Medical Room (Floor 2, \u003c2 min response) or T2 Medical Room (Floor 2, on-site doctor). Call *911 from any airport phone immediately. Defibrillator, oxygen, trauma kits available. Ambulance response: \u003c5 minutes. Staff trained in CPR.",
+        "metadata": {
+            "type": "recommendation",
+            "name": "Medical Emergency Protocol",
+            "terminal": "T1-T2",
+            "location": "Medical_Facilities",
+            "time_required": 2,
+            "category": "emergency",
+            "price_range": "low",
+            "priority": "emergency",
+            "queue_time": 0,
+            "traveler_type": [
+                "solo",
+                "family"
+            ],
+            "budget_preference": "low",
+            "accessibility": true,
+            "wheelchair_friendly": true,
+            "emergency_number": "*911",
+            "response_time": "2 minutes",
+            "doctor_availability": true,
+            "ambulance_available": true,
+            "rating": 4.5
+        },
+        "image_path": ""
+    },
+    {
+        "text": "RECOMMENDATION: Lost Baggage Recovery: Report immediately to Lost Baggage Counter (T1 Floor 0 or T2 Info Desk). Provide: Flight number, baggage tag, flight date. Processing: 15-30 min. Insurance: Included with ticket. Compensation: $2000-5000 USD typical limit depending on airline policy.",
+        "metadata": {
+            "type": "recommendation",
+            "name": "Lost Baggage Protocol",
+            "terminal": "T1-T2",
+            "location": "Lost_Baggage_Counter",
+            "time_required": 30,
+            "category": "baggage_support",
+            "price_range": "low",
+            "priority": "normal",
+            "queue_time": 5,
+            "traveler_type": [
+                "solo",
+                "family"
+            ],
+            "budget_preference": "low",
+            "accessibility": true,
+            "wheelchair_friendly": true,
+            "processing_time": "30 minutes",
+            "insurance_included": true,
+            "compensation_max": 5000,
+            "rating": 4.2
+        },
+        "image_path": ""
+    }
+]
