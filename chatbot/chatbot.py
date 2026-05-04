@@ -40,10 +40,12 @@ class AgentState(TypedDict):
 # AUDIO TRANSCRIPTION NODE
 # =========================
 @traceable(name="Audio Transcription")
+
 def audio_node(state):
     """
-    If audio_path is present in state, transcribe it
-    and inject transcribed text into state["query"].
+    If audio_path is present in state, transcribe it,
+    inject transcribed English text into state["query"],
+    and set detected language so response can be translated back.
     """
     audio_path = state.get("audio_path")
 
@@ -53,20 +55,21 @@ def audio_node(state):
     print(f"🎙️ Transcribing audio: {audio_path}")
 
     try:
-        transcribed_text = transcribe_audio(audio_path)
+        result = transcribe_audio(audio_path)  # ✅ now a dict
     except Exception as e:
         print(f"❌ transcribe_audio FAILED: {e}")
         traceback.print_exc()
         raise
 
-    print(f"📝 Transcribed: {transcribed_text}")
+    print(f"📝 Transcribed: {result['text']}")
 
     return {
         **state,
-        "query": transcribed_text,
+        "query": result["text"],             # ✅ English text for RAG + LLM
+        "translated_query": result["text"],  # ✅ already English, skip translate node
+        "language": result["language"],      # ✅ "hi"/"en" — used to translate response back
         "audio_path": None
     }
-
 
 # =========================
 # CLASSIFIER NODE

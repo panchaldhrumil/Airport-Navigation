@@ -24,17 +24,24 @@ def ingest_airport_data(file_path: str):
 # =========================
 # AUDIO TRANSCRIPTION
 # =========================
-def transcribe_audio(audio_path: str) -> str:
+def transcribe_audio(audio_path: str) -> dict:  # ✅ return type changed to dict
     """
-    Takes an audio file path,
-    transcribes it using Whisper via addToChunk,
-    and returns the transcribed text.
+    Takes an audio file path, transcribes + translates to English via Whisper,
+    and returns both the transcribed text and the detected original language.
     """
     print(f"🎙️ Transcribing: {audio_path}")
     result = addToChunk(audio_path)
+
     transcribed_text = result["text"]
+    detected_language = result["detected_language"]  # ✅ extract language
+
     print(f"📝 Transcribed text: {transcribed_text}")
-    return transcribed_text
+    print(f"🌐 Detected language: {detected_language}")
+
+    return {
+        "text": transcribed_text,
+        "language": detected_language  # ✅ return to caller
+    }
 
 
 # =========================

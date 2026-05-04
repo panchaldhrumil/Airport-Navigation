@@ -20,9 +20,10 @@ def addToChunk(audio_path: str, language: str = None):
 
     # ✅ Free memory after transcription so Ollama has room
     gc.collect()
-    torch.cuda.empty_cache()  # clears any leftover CUDA allocations
+    torch.cuda.empty_cache()
 
     return {
         "source": audio_path,
-        "text": result["text"].strip()
+        "text": result["text"].strip(),
+        "detected_language": result["language"]  # ✅ "hi", "en", "gu" etc.
     }

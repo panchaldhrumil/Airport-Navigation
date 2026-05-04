@@ -18,9 +18,11 @@ print("✅ Token loaded:", HF_TOKEN[:10], "...")
 
 # =========================
 # DEVICE
+# ✅ Force CPU for ALL translation models
+# so they don't compete with Ollama for VRAM
 # =========================
-DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
-print("🚀 Using device:", DEVICE)
+DEVICE = "cpu"
+print("🚀 Translation models using device: CPU")
 
 # =========================
 # MODEL NAMES
@@ -38,7 +40,7 @@ en_indic_tokenizer = AutoTokenizer.from_pretrained(
 print("⏳ Loading EN→Indic model...")
 en_indic_model = AutoModelForSeq2SeqLM.from_pretrained(
     EN_INDIC_MODEL, trust_remote_code=True, token=HF_TOKEN
-).to(DEVICE)
+).to(DEVICE)  # ✅ CPU
 print("✅ EN→Indic model loaded!")
 
 # =========================
@@ -51,14 +53,14 @@ indic_en_tokenizer = AutoTokenizer.from_pretrained(
 print("⏳ Loading Indic→EN model...")
 indic_en_model = AutoModelForSeq2SeqLM.from_pretrained(
     INDIC_EN_MODEL, trust_remote_code=True, token=HF_TOKEN
-).to(DEVICE)
+).to(DEVICE)  # ✅ CPU
 print("✅ Indic→EN model loaded!\n")
 
 
 # =========================
 # LANGUAGE DETECTION
 # =========================
-def detect_language(text):
+def detect_language(text: str) -> str:
     """
     Returns:
       'hindi'   — Devanagari script
@@ -84,7 +86,7 @@ def detect_language(text):
 # =========================
 # TRANSLATE FUNCTIONS
 # =========================
-def translate_to_english(text):
+def translate_to_english(text: str) -> str:
     """Hindi (Devanagari) → English. Returns as-is if already English/Hinglish."""
     if not text or not isinstance(text, str):
         return text
@@ -93,6 +95,8 @@ def translate_to_english(text):
         return text  # Already English or Hinglish — return as-is
 
     input_text = f"hin_Deva eng_Latn {text}"
+
+    # ✅ inputs go to same device as model (CPU)
     inputs = indic_en_tokenizer(input_text, return_tensors="pt").to(DEVICE)
 
     with torch.no_grad():
@@ -101,12 +105,14 @@ def translate_to_english(text):
     return indic_en_tokenizer.decode(outputs[0], skip_special_tokens=True)
 
 
-def translate_to_hindi(text):
+def translate_to_hindi(text: str) -> str:
     """English → Hindi (Devanagari)"""
     if not text or not isinstance(text, str):
         return text
 
     input_text = f"eng_Latn hin_Deva {text}"
+
+    # ✅ inputs go to same device as model (CPU)
     inputs = en_indic_tokenizer(input_text, return_tensors="pt").to(DEVICE)
 
     with torch.no_grad():
@@ -126,9 +132,9 @@ if __name__ == "__main__":
 
     hindi_inputs = [
         "मुझे गेट A2 जाना है",
-        "Gate A2 kaha hai?",    # Hinglish — returned as-is
+        "Gate A2 kaha hai?",     # Hinglish — returned as-is
         "मुझे खाना चाहिए",
-        "Coffee shop kaha hai?", # Hinglish — returned as-is
+        "Coffee shop kaha hai?",  # Hinglish — returned as-is
         "",
         "12345",
         None,

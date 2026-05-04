@@ -1,60 +1,103 @@
-from fastapi import FastAPI, HTTPException
-from fastapi.responses import StreamingResponse
-from .schemas import ChatRequest
-from chatbot import graph
-from backend.status import redis_client
+from fastapi import FastAPI, HTTPException, UploadFile, File, Form
+from fastapi.middleware.cors import CORSMiddleware
+import tempfile
+import os
+import traceback
+
+from .schemas import TextChatRequest, ChatResponse, AudioChatResponse
+from chatbot.chatbot import graph
 
 app = FastAPI()
 
-
-def ai_stream(query: str, thread_id: str):
-    config = {
-        "configurable": {
-            "thread_id": thread_id
-        }
-    }
-
-    state = {
-        "query": query
-    }
-
-    for message, metadata in graph.stream(
-        state,
-        config=config,
-        stream_mode="messages"
-    ):
-        if message.__class__.__name__ == "AIMessageChunk":
-            if message.content:
-                yield message.content + " "
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],           # allow all origins during development
+    allow_credentials=False,       # must be False when allow_origins=["*"]
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
-@app.post("/chat")
-def chat(req: ChatRequest):
-    return StreamingResponse(
-        ai_stream(req.query, req.thread_id),
-        media_type="text/plain"
-    )
 
-
-# Single clean status endpoint
-@app.get("/status/{thread_id}")
-def get_status(thread_id: str):
+# =========================
+# TEXT ENDPOINT
+# =========================
+@app.post("/chat/text", response_model=ChatResponse)
+def chat_text(req: TextChatRequest):
     try:
-        status = redis_client.get(thread_id)
+        state = {
+            "query": req.query,
+            "intent": None,
+            "language": None,
+            "confidence": None,
+            "translated_query": None,
+            "response": None,
+            "audio_path": None
+        }
 
-        if not status:
-            raise HTTPException(
-                status_code=404,
-                detail="invalid_thread_id"
-            )
+        result = graph.invoke(state)
 
-        return {"status": status}
-
-    except HTTPException:
-        raise
+        return ChatResponse(
+            session_id=req.session_id,
+            response=result["response"],
+            intent=result.get("intent"),
+            language=result.get("language")
+        )
 
     except Exception as e:
-        raise HTTPException(
-            status_code=500,
-            detail=f"redis_error: {str(e)}"
+        traceback.print_exc()
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+# =========================
+# AUDIO ENDPOINT
+# =========================
+@app.post("/chat/audio", response_model=AudioChatResponse)
+async def chat_audio(
+    session_id: str = Form(...),
+    file: UploadFile = File(...)
+):
+    tmp_path = None
+    try:
+        # ✅ Save uploaded audio to a temp file
+        suffix = os.path.splitext(file.filename)[-1] or ".ogg"
+        with tempfile.NamedTemporaryFile(delete=False, suffix=suffix) as tmp:
+            tmp.write(await file.read())
+            tmp_path = tmp.name
+
+        state = {
+            "query": "",
+            "intent": None,
+            "language": None,
+            "confidence": None,
+            "translated_query": None,
+            "response": None,
+            "audio_path": tmp_path   # ✅ graph handles transcription internally
+        }
+
+        result = graph.invoke(state)
+
+        return AudioChatResponse(
+            session_id=session_id,
+            response=result["response"],
+            intent=result.get("intent"),
+            language=result.get("language"),
+            transcribed_text=result.get("translated_query")  # English text from Whisper
         )
+
+    except Exception as e:
+        traceback.print_exc()
+        raise HTTPException(status_code=500, detail=str(e))
+
+    finally:
+        # ✅ Always clean up temp audio file
+        if tmp_path and os.path.exists(tmp_path):
+            os.remove(tmp_path)
+
+
+# =========================
+# HEALTH CHECK
+# =========================
+@app.get("/health")
+def health():
+    return {"status": "ok"}
